@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Minh Anh | Marketing Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      border-bottom: 1px solid #eee;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #e85d04;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+      background: #fff4ed;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .small-title {
+      color: #e85d04;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 7vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #e85d04;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e85d04;
+      color: white;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+
+    .button-outline {
+      display: inline-block;
+      border: 1px solid #333;
+      color: #333;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+    }
+
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 90px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: #777;
+      margin-bottom: 40px;
+      max-width: 700px;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    .about-info {
+      background: #f5f5f5;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .about-info p {
+      margin-bottom: 14px;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+      background: white;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 25px;
+      background: #f7f7f7;
+      border-radius: 10px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* PROJECTS */
+
+    .projects {
+      background: #fafafa;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 30px;
+      transition: 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .project-number {
+      color: #e85d04;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .project-card h3 {
+      margin: 12px 0;
+      font-size: 22px;
+    }
+
+    .project-card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #fff0e6;
+      color: #d65300;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin: 3px;
+    }
+
+
+    /* CLUB EXPERIENCE */
+
+    .club-section {
+      background: white;
+    }
+
+    .club-header {
+      background: #171717;
+      color: white;
+      padding: 35px;
+      border-radius: 12px;
+      margin-bottom: 35px;
+    }
+
+    .club-header h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .club-header p {
+      color: #bbb;
+    }
+
+    .club-project {
+      border-left: 3px solid #e85d04;
+      padding: 5px 0 25px 25px;
+      margin-bottom: 25px;
+    }
+
+    .club-project h3 {
+      margin-bottom: 5px;
+    }
+
+    .club-project .date {
+      color: #e85d04;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .club-project p {
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-item {
+      border-left: 3px solid #e85d04;
+      padding-left: 25px;
+      margin-bottom: 35px;
+    }
+
+    .experience-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .experience-item .date {
+      color: #e85d04;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .experience-item p {
+      color: #666;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+      background: #171717;
+      color: white;
+      max-width: none;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: #171717;
+      color: #777;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #333;
+      font-size: 13px;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      nav {
+        padding: 15px 5%;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .about-grid,
+      .skill-grid,
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <div class="logo">
+      MA.
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#club">Club</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </nav>
+
+
+
+  <!-- HERO -->
+
+  <div class="hero">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        MARKETING STUDENT & ASPIRING MARKETER
+      </div>
+
+      <h1>
+        Hi, I'm <span>Minh Anh.</span>
+        <br>
+        I turn ideas into
+        <span>marketing stories.</span>
+      </h1>
+
+      <p>
+        A creative and curious International Business student
+        passionate about consumer behavior, digital marketing
+        and brand communication. I enjoy turning consumer insights
+        into simple and engaging marketing ideas.
+      </p>
+
+      <a href="#projects" class="button">
+        View My Work
+      </a>
+
+      <a href="#contact" class="button-outline">
+        Contact Me
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About Me
+    </h2>
+
+    <p class="section-subtitle">
+      A little about who I am, what I do and what I am looking for.
+    </p>
+
+
+    <div class="about-grid">
+
+
+      <div class="about-text">
+
+        <p>
+          I am a third-year International Business student
+          at Foreign Trade University (FTU), with a strong
+          interest in marketing and brand management.
+        </p>
+
+        <p>
+          Through university projects and my experience in
+          the Marketing Club, I have developed practical
+          experience in market research, consumer analysis,
+          campaign planning, content creation and event
+          communication.
+        </p>
+
+        <p>
+          I enjoy combining analytical thinking with creativity
+          to understand consumers and develop marketing ideas
+          that are both meaningful and engaging.
+        </p>
+
+        <p>
+          I am currently looking for a Marketing Internship
+          opportunity where I can learn from experienced
+          marketers and contribute to real marketing projects.
+        </p>
+
+      </div>
+
+
+      <div class="about-info">
+
+        <p>
+          <strong>Name:</strong>
+          Nguyen Minh Anh
+        </p>
+
+        <p>
+          <strong>University:</strong>
+          Foreign Trade University
+        </p>
+
+        <p>
+          <strong>Major:</strong>
+          International Business
+        </p>
+
+        <p>
+          <strong>Focus:</strong>
+          Marketing & Brand Communication
+        </p>
+
+        <p>
+          <strong>Location:</strong>
+          Hanoi, Vietnam
+        </p>
+
+        <p>
+          <strong>Career Goal:</strong>
+          Marketing Intern / Brand Intern
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- SKILLS -->
+
+  <section id="skills" class="skills">
+
+    <h2 class="section-title">
+      What I Can Do
+    </h2>
+
+    <p class="section-subtitle">
+      A combination of analytical thinking, creativity
+      and communication skills.
+    </p>
+
+
+    <div class="skill-grid">
+
+
+      <div class="skill-card">
+
+        <h3>
+          Market Research
+        </h3>
+
+        <p>
+          Conduct basic consumer research, design surveys,
+          analyze market trends and identify customer needs.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Content Marketing
+        </h3>
+
+        <p>
+          Develop social media content ideas, captions
+          and communication concepts for target audiences.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Campaign Planning
+        </h3>
+
+        <p>
+          Develop campaign concepts, communication messages,
+          content plans and basic campaign activities.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Consumer Insight
+        </h3>
+
+        <p>
+          Analyze consumer motivations, preferences and
+          behaviors to support marketing decisions.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Event Communication
+        </h3>
+
+        <p>
+          Support event promotion through social media,
+          visual content, announcements and recap content.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Marketing Tools
+        </h3>
+
+        <p>
+          Microsoft PowerPoint, Excel, Canva, Google Forms
+          and basic social media analytics.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ACADEMIC PROJECTS -->
+
+  <section id="projects" class="projects">
+
+    <h2 class="section-title">
+      Selected Projects
+    </h2>
+
+    <p class="section-subtitle">
+      Academic and personal projects that demonstrate
+      my approach to marketing problems.
+    </p>
+
+
+    <div class="project-grid">
+
+
+      <!-- PROJECT 1 -->
+
+      <div class="project-card">
+
+        <div class="project-number">
+          PROJECT 01 · MARKET RESEARCH
+        </div>
+
+        <h3>
+          PepsiCo Consumer Insight Project
+        </h3>
+
+        <p>
+          Conducted a simulated market research project to
+          understand young consumers' attitudes toward PepsiCo's
+          beverage products. Designed a questionnaire,
+          identified consumer segments and developed marketing
+          recommendations based on the findings.
+        </p>
+
+        <span class="tag">
+          Market Research
+        </span>
+
+        <span class="tag">
+          Consumer Insight
+        </span>
+
+        <span class="tag">
+          Survey
+        </span>
+
+      </div>
+
+
+
+      <!-- PROJECT 2 -->
+
+      <div class="project-card">
+
+        <div class="project-number">
+          PROJECT 02 · DIGITAL MARKETING
+        </div>
+
+        <h3>
+          "Refresh Your Day" Social Campaign
+        </h3>
+
+        <p>
+          Developed a digital campaign concept targeting
+          university students. Created the campaign message,
+          social media content ideas and a weekly content plan
+          for TikTok and Instagram.
+        </p>
+
+        <span class="tag">
+          Digital Marketing
+        </span>
+
+        <span class="tag">
+          Social Media
+        </span>
+
+        <span class="tag">
+          Content Planning
+        </span>
+
+      </div>
+
+
+
+      <!-- PROJECT 3 -->
+
+      <div class="project-card">
+
+        <div class="project-number">
+          PROJECT 03 · BRANDING
+        </div>
+
+        <h3>
+          Rebranding a Local Coffee Brand
+        </h3>
+
+        <p>
+          Analyzed the positioning of a hypothetical local
+          coffee brand and proposed a new target audience,
+          brand personality and communication message to make
+          the brand more attractive to Gen Z consumers.
+        </p>
+
+        <span class="tag">
+          Brand Strategy
+        </span>
+
+        <span class="tag">
+          Positioning
+        </span>
+
+        <span class="tag">
+          Gen Z
+        </span>
+
+      </div>
+
+
+
+      <!-- PROJECT 4 -->
+
+      <div class="project-card">
+
+        <div class="project-number">
+          PROJECT 04 · CONTENT
+        </div>
+
+        <h3>
+          Instagram Content Series
+        </h3>
+
+        <p>
+          Created a five-post Instagram content series for
+          a fictional skincare brand. Developed content themes,
+          captions and visual directions based on the brand's
+          target customer profile.
+        </p>
+
+        <span class="tag">
+          Content Creation
+        </span>
+
+        <span class="tag">
+          Instagram
+        </span>
+
+        <span class="tag">
+          Copywriting
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- MARKETING CLUB -->
+
+  <section id="club" class="club-section">
+
+    <h2 class="section-title">
+      Marketing Club Experience
+    </h2>
+
+    <p class="section-subtitle">
+      Practical marketing experience through student-led
+      campaigns and university events at Foreign Trade University.
+    </p>
+
+
+    <div class="club-header">
+
+      <h3>
+        Marketing Club · Foreign Trade University
+      </h3>
+
+      <p>
+        Marketing Team Member · 2025 – 2026
+      </p>
+
+    </div>
+
+
+
+    <!-- CLUB PROJECT 1 -->
+
+    <div class="club-project">
+
+      <h3>
+        Freshers Recruitment Campaign
+      </h3>
+
+      <div class="date">
+        Recruitment Campaign · 2025
+      </div>
+
+      <p>
+        Supported the annual recruitment campaign for new
+        club members. Developed social media content ideas,
+        wrote Facebook captions and contributed to the
+        communication plan targeting first-year students.
+      </p>
+
+      <span class="tag">
+        Social Media
+      </span>
+
+      <span class="tag">
+        Copywriting
+      </span>
+
+      <span class="tag">
+        Campaign Planning
+      </span>
+
+    </div>
+
+
+
+    <!-- CLUB PROJECT 2 -->
+
+    <div class="club-project">
+
+      <h3>
+        Campus Brand Activation
+      </h3>
+
+      <div class="date">
+        Student Marketing Event · 2025
+      </div>
+
+      <p>
+        Worked with the marketing team to promote a
+        campus activation event. Helped develop the
+        communication concept, promotional materials
+        and on-campus engagement activities.
+      </p>
+
+      <span class="tag">
+        Brand Activation
+      </span>
+
+      <span class="tag">
+        Event Marketing
+      </span>
+
+      <span class="tag">
+        Communication
+      </span>
+
+    </div>
+
+
+
+    <!-- CLUB PROJECT 3 -->
+
+    <div class="club-project">
+
+      <h3>
+        Marketing Workshop 2026
+      </h3>
+
+      <div class="date">
+        Communication Team · 2026
+      </div>
+
+      <p>
+        Supported the communication campaign for a student
+        marketing workshop. Created teaser content, prepared
+        a social media content calendar and contributed to
+        post-event recap content.
+      </p>
+
+      <span class="tag">
+        Content Planning
+      </span>
+
+      <span class="tag">
+        Social Media
+      </span>
+
+      <span class="tag">
+        Event Communication
+      </span>
+
+    </div>
+
+
+
+    <!-- CLUB PROJECT 4 -->
+
+    <div class="club-project">
+
+      <h3>
+        Student Consumer Survey
+      </h3>
+
+      <div class="date">
+        Marketing Research Activity · 2026
+      </div>
+
+      <p>
+        Participated in a small-scale student survey to
+        understand university students' preferences toward
+        brands and social media content. Helped design survey
+        questions, collect responses and summarize key findings.
+      </p>
+
+      <span class="tag">
+        Consumer Research
+      </span>
+
+      <span class="tag">
+        Survey Design
+      </span>
+
+      <span class="tag">
+        Data Analysis
+      </span>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- EXPERIENCE -->
+
+  <section id="experience">
+
+    <h2 class="section-title">
+      Experience
+    </h2>
+
+    <p class="section-subtitle">
+      Activities that helped me develop practical
+      marketing and teamwork skills.
+    </p>
+
+
+    <div class="experience-item">
+
+      <h3>
+        Marketing Team Member
+      </h3>
+
+      <div class="date">
+        Marketing Club – Foreign Trade University · 2025 – 2026
+      </div>
+
+      <p>
+        Participated in student-led marketing campaigns,
+        social media activities, event communication and
+        consumer research projects.
+      </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+      <h3>
+        Marketing Project Team Member
+      </h3>
+
+      <div class="date">
+        University Marketing Project · 2025 – 2026
+      </div>
+
+      <p>
+        Collaborated with a five-member team to develop
+        marketing strategies for consumer brands. Responsible
+        for market research, competitor analysis and campaign ideas.
+      </p>
+
+    </div>
+
+
+    <div class="experience-item">
+
+      <h3>
+        Marketing Case Competition Participant
+      </h3>
+
+      <div class="date">
+        University Business Competition · 2025
+      </div>
+
+      <p>
+        Worked in a team to analyze a consumer brand's
+        marketing challenge and presented a proposed
+        communication strategy to a judging panel.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <h2>
+      Let's Work Together.
+    </h2>
+
+    <p>
+      I'm currently looking for a Marketing Internship opportunity.
+    </p>
+
+    <a
+      href="mailto:minhanh.marketing@example.com"
+      class="button"
+    >
+      Email Me
+    </a>
+
+    <p style="margin-top: 25px;">
+
+      minhanh.marketing@example.com
+
+      &nbsp; · &nbsp;
+
+      linkedin.com/in/minhanh-marketing
+
+    </p>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Nguyen Minh Anh · Marketing Portfolio
+
+  </footer>
+
+
+</body>
+</html>
