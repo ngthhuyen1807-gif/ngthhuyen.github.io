@@ -1,5 +1,5 @@
 /**
- * Bloomora — Nguyen Minh Anh Marketing Portfolio
+ * THƯƠNG HUYỀN — Marketing Portfolio
  * Vanilla JavaScript (Interactivity, Smooth Scrolling, Modals, Dynamic Search)
  */
 
@@ -29,12 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchResults = document.getElementById('searchResults');
   const suggestionTags = document.querySelectorAll('.suggestion-tag');
 
-  // Cart Modal Elements
-  const cartBtn = document.getElementById('cartBtn');
-  const cartModal = document.getElementById('cartModal');
-  const cartCloseBtn = document.getElementById('cartCloseBtn');
-  const cartBackdrop = document.getElementById('cartBackdrop');
-  const cartProceedBtn = document.getElementById('cartProceedBtn');
 
   // Copy Email Toast
   const copyEmailBtn = document.getElementById('copyEmailBtn');
@@ -106,9 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
           closeMobileNav();
         }
 
-        // Close search & cart modals if open
+        // Close search modal if open
         closeSearch();
-        closeCart();
 
         const headerHeight = header.offsetHeight || 80;
         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (headerHeight - 10);
@@ -214,31 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ============================================================
-     7. Cart Modal Functionality
-     ============================================================ */
-  function openCart() {
-    cartModal.classList.add('active');
-    cartModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeCart() {
-    cartModal.classList.remove('active');
-    cartModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  if (cartBtn) cartBtn.addEventListener('click', openCart);
-  if (cartCloseBtn) cartCloseBtn.addEventListener('click', closeCart);
-  if (cartBackdrop) cartBackdrop.addEventListener('click', closeCart);
-  if (cartProceedBtn) {
-    cartProceedBtn.addEventListener('click', () => {
-      closeCart();
-    });
-  }
-
-  /* ============================================================
-     8. Copy Email to Clipboard & Toast Notification
+     7. Copy Email to Clipboard & Toast Notification
      ============================================================ */
   function showToast(message) {
     if (toastMsg) toastMsg.textContent = message;
@@ -271,12 +240,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ============================================================
-     9. ESC Key listener to close active modals & menu
+     8. ESC Key listener to close active modals & menu
      ============================================================ */
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeSearch();
-      closeCart();
       closeMobileNav();
     }
   });

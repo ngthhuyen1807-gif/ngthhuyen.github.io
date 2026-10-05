@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloomora — Nguyen Minh Anh | Marketing Portfolio</title>
-  <meta name="description" content="Personal Marketing Portfolio of Nguyen Minh Anh - Foreign Trade University (FTU) student specializing in Market Research, Brand Management, and Campaign Planning.">
+  <title>Thương Huyền — Marketing Portfolio</title>
+  <meta name="description" content="Personal Marketing Portfolio of Nguyễn Thương Huyền - Specializing in Market Research, Brand Management, and Campaign Planning.">
   
   <!-- Google Fonts: Inter & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,21 +34,20 @@
     <!-- Header / Navigation -->
     <header class="header">
       <!-- Logo (Left) -->
-      <a href="#home" class="logo" aria-label="Bloomora Home">
-        <svg class="logo-flower-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V12m0 0a4.5 4.5 0 1 0 4.5 4.5M12 12a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5h4.5m-4.5 0H7.5"/>
-          <circle cx="12" cy="12" r="1.8" fill="#f87b97" stroke="none"/>
-        </svg>
-        <span class="logo-text">BLOOMORA</span>
+      <a href="#home" class="logo" aria-label="Thương Huyền Marketing Portfolio">
+        <div class="logo-brand-wrap">
+          <span class="logo-brand-name">THƯƠNG HUYỀN</span>
+          <span class="logo-brand-sub">MARKETING PORTFOLIO</span>
+        </div>
       </a>
 
       <!-- Main Navigation (Center) -->
       <nav class="main-nav" id="desktopNav">
         <a href="#home" class="nav-item active" data-section="home">Home</a>
-        <a href="#about" class="nav-item" data-section="about">About</a>
-        <a href="#skills" class="nav-item" data-section="skills">Services</a>
-        <a href="#projects" class="nav-item" data-section="projects">Shop</a>
-        <a href="#club-experience" class="nav-item" data-section="club-experience">Journal</a>
+        <a href="#about" class="nav-item" data-section="about">About Me</a>
+        <a href="#skills" class="nav-item" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-item" data-section="projects">Projects</a>
+        <a href="#club-experience" class="nav-item" data-section="club-experience">Experience</a>
         <a href="#contact" class="nav-item" data-section="contact">Contact</a>
       </nav>
 
@@ -58,18 +57,6 @@
         <button class="icon-btn" id="searchBtn" aria-label="Search">
           <i data-lucide="search"></i>
         </button>
-
-        <!-- Cart Icon with Notification Badge -->
-        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
-          <i data-lucide="shopping-bag"></i>
-          <span class="cart-badge">2</span>
-        </button>
-
-        <!-- Outline CTA Button -->
-        <a href="#contact" class="btn-outline">
-          <span>Get in Touch</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
 
         <!-- Mobile Menu Toggle -->
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
@@ -85,15 +72,14 @@
       </button>
       <div class="mobile-nav-links">
         <a href="#home" class="mobile-link active">Home</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#skills" class="mobile-link">Services & Skills</a>
-        <a href="#projects" class="mobile-link">Projects & Shop</a>
-        <a href="#club-experience" class="mobile-link">Club Journal</a>
-        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#about" class="mobile-link">About Me</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#club-experience" class="mobile-link">Experience</a>
         <a href="#contact" class="mobile-link">Contact</a>
       </div>
       <div class="mobile-nav-footer">
-        <p>Nguyen Minh Anh · Marketing Portfolio</p>
+        <p>Nguyễn Thương Huyền · Marketing Portfolio</p>
         <a href="mailto:minhanh.marketing@example.com" class="mobile-email-link">minhanh.marketing@example.com</a>
       </div>
     </div>
@@ -106,19 +92,18 @@
           <span class="badge-dot"></span>
           <span>MARKETING & BRAND PORTFOLIO</span>
         </div>
-        <p class="hero-subtitle">NATURE'S BEAUTY, YOUR SANCTUARY</p>
-        <h1 class="hero-title">Find Beauty<br>in Every Bloom</h1>
+        <p class="hero-subtitle">TURNING IDEAS INTO IMPACT</p>
+        <h1 class="hero-title">Nguyễn Thương Huyền</h1>
         <p class="hero-desc">
-          Discover thoughtfully curated floral collections<br>
-          that bring peace, joy, and color to your world.
+          A personal portfolio showcasing my projects, marketing experience, and creative work.
         </p>
         <div class="hero-actions">
-          <a href="#about" class="btn-primary">
-            <span>Explore Collections</span>
+          <a href="#projects" class="btn-primary">
+            <span>Explore My Work</span>
             <i data-lucide="arrow-right"></i>
           </a>
-          <a href="#projects" class="btn-secondary">
-            <span>View Marketing Work</span>
+          <a href="#about" class="btn-secondary">
+            <span>About Me</span>
           </a>
         </div>
       </div>
@@ -128,33 +113,31 @@
         <div class="badge-circle">
           <svg class="rotating-text" viewBox="0 0 140 140" width="140" height="140">
             <defs>
-              <!-- Top semi-circle path for "HANDPICKED" -->
+              <!-- Top semi-circle path for "MARKETING" -->
               <path id="topCurve" d="M 18, 70 A 52, 52 0 0, 1 122, 70" fill="none" />
-              <!-- Bottom semi-circle path for "WITH LOVE" (drawn right-to-left so text remains right side up) -->
+              <!-- Bottom semi-circle path for "PORTFOLIO" (drawn right-to-left so text remains right side up) -->
               <path id="bottomCurve" d="M 122, 70 A 52, 52 0 0, 1 18, 70" fill="none" />
             </defs>
             <!-- Top Text -->
             <text class="badge-svg-text">
               <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
-                HANDPICKED
+                MARKETING
               </textPath>
             </text>
             <!-- Bottom Text -->
             <text class="badge-svg-text">
               <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
-                WITH LOVE
+                PORTFOLIO
               </textPath>
             </text>
             <!-- Pink dots separating the texts -->
             <circle cx="18" cy="70" r="2.8" fill="#f87b97" />
             <circle cx="122" cy="70" r="2.8" fill="#f87b97" />
           </svg>
-          <!-- Center Static SVG Petal/Flower Icon -->
+          <!-- Center Static SVG Sparkle/Star Icon -->
           <div class="badge-center-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" opacity="0.2" fill="rgba(248,123,151,0.2)"/>
-              <path d="M12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z" stroke="#f87b97" fill="#f87b97" fill-opacity="0.3"/>
-              <path d="M12 2v6M12 16v6M2 12h6M16 12h6"/>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="rgba(248,123,151,0.3)" stroke="#f87b97" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
           </div>
         </div>
@@ -283,7 +266,7 @@
     <section class="section skills-section" id="skills">
       <div class="section-container">
         <div class="section-tag-wrapper">
-          <span class="section-tag">SERVICES & SKILLS</span>
+          <span class="section-tag">SKILLS & EXPERTISE</span>
           <div class="section-tag-line"></div>
         </div>
         <h2 class="section-title">What I Can Do</h2>
@@ -463,7 +446,7 @@
     <section class="section club-section" id="club-experience">
       <div class="section-container">
         <div class="section-tag-wrapper">
-          <span class="section-tag">JOURNAL & ACTIVITIES</span>
+          <span class="section-tag">EXPERIENCE & ACTIVITIES</span>
           <div class="section-tag-line"></div>
         </div>
         <h2 class="section-title">Marketing Club Experience</h2>
@@ -611,11 +594,10 @@
     <footer class="footer-section" id="contact">
       <div class="footer-container">
         <div class="footer-brand-top">
-          <svg class="footer-flower" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V12m0 0a4.5 4.5 0 1 0 4.5 4.5M12 12a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5h4.5m-4.5 0H7.5"/>
-            <circle cx="12" cy="12" r="2" fill="#f87b97" stroke="none"/>
-          </svg>
-          <span class="footer-brand-name">BLOOMORA</span>
+          <div class="logo-brand-wrap center">
+            <span class="footer-brand-name">THƯƠNG HUYỀN</span>
+            <span class="footer-brand-sub">MARKETING PORTFOLIO</span>
+          </div>
         </div>
 
         <h2 class="footer-heading">Let's Work Together.</h2>
@@ -656,7 +638,7 @@
         <!-- Copyright -->
         <div class="footer-bottom">
           <p>© 2026 Nguyen Minh Anh · Marketing Portfolio</p>
-          <p class="footer-sub-credit">Crafted with Bloomora Aesthetic · HTML5 & CSS3 Vanilla</p>
+          <p class="footer-sub-credit">Personal Marketing Portfolio · Nguyen Minh Anh · HTML5 & CSS3 Vanilla</p>
         </div>
       </div>
     </footer>
@@ -685,41 +667,6 @@
     </div>
   </div>
 
-  <!-- Interactive Cart Modal -->
-  <div class="modal" id="cartModal" aria-hidden="true">
-    <div class="modal-backdrop" id="cartBackdrop"></div>
-    <div class="modal-box glass-panel">
-      <div class="modal-header">
-        <div class="cart-modal-title-wrap">
-          <i data-lucide="shopping-bag" class="pink-icon"></i>
-          <h3 class="modal-title">Your Curated Collection</h3>
-        </div>
-        <button class="modal-close" id="cartCloseBtn" aria-label="Close cart"><i data-lucide="x"></i></button>
-      </div>
-      <div class="cart-items-list">
-        <div class="cart-item">
-          <div class="cart-item-info">
-            <h4 class="cart-item-title">Nguyen Minh Anh — Marketing Portfolio Dossier</h4>
-            <p class="cart-item-desc">Comprehensive Case Studies & Resume</p>
-          </div>
-          <span class="cart-item-badge">Included</span>
-        </div>
-        <div class="cart-item">
-          <div class="cart-item-info">
-            <h4 class="cart-item-title">Bloomora Curated Floral Lookbook 2026</h4>
-            <p class="cart-item-desc">Digital Art Direction & Campaign Mockup</p>
-          </div>
-          <span class="cart-item-badge">Included</span>
-        </div>
-      </div>
-      <div class="cart-modal-footer">
-        <a href="#contact" class="btn-primary" id="cartProceedBtn" style="width: 100%; justify-content: center;">
-          <span>Request Full CV / Case Studies</span>
-          <i data-lucide="arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <!-- Toast Notification -->
   <div class="toast" id="toast">
